@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/picture">
+        <file>picture_zh.ts</file>
+        <file>picture_zh.qm</file>
+        <file>Resources/NewFile.png</file>
+        <file>Resources/SaveFile.png</file>
+        <file>Resources/SaveAs.png</file>
+        <file>Resources/OpenFile.png</file>
+        <file>BlackSkin.qss</file>
+        <file>Resources/Magic.png</file>
+        <file>Resources/circle.png</file>
+        <file>Resources/oval.png</file>
+        <file>Resources/Rectangle.png</file>
+        <file>Resources/triangle.png</file>
+    </qresource>
+</RCC>

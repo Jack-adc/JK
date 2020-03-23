@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>L3DArtistClass</class>
+ <widget class="QMainWindow" name="L3DArtistClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1613</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>L3DArtist</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>48</width>
+    <height>48</height>
+   </size>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1613</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="m_pMenuFile">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="m_pNewScene"/>
+    <addaction name="m_pSaveScene"/>
+    <addaction name="m_pRenameScene"/>
+    <addaction name="m_pSaveAsScene"/>
+    <addaction name="m_pDeleteScene"/>
+    <addaction name="m_pImportScene"/>
+    <addaction name="m_pExportScene"/>
+    <addaction name="m_pCloseScene"/>
+    <addaction name="separator"/>
+    <addaction name="m_pExtractNode"/>
+    <addaction name="m_pImportNode"/>
+    <addaction name="m_pExportNode"/>
+    <addaction name="separator"/>
+    <addaction name="m_pOutputVideo"/>
+    <addaction name="m_pTga_To_Flg"/>
+    <addaction name="separator"/>
+    <addaction name="m_pSetCard"/>
+    <addaction name="separator"/>
+    <addaction name="m_pModifyPwd"/>
+    <addaction name="separator"/>
+    <addaction name="m_pExit"/>
+   </widget>
+   <widget class="QMenu" name="m_pMenuEdit">
+    <property name="title">
+     <string>Edit(&amp;E)</string>
+    </property>
+    <addaction name="m_pUndo"/>
+    <addaction name="m_pRedo"/>
+    <addaction name="separator"/>
+    <addaction name="m_pCut"/>
+    <addaction name="m_pCopy"/>
+    <addaction name="m_pPaste"/>
+    <addaction name="separator"/>
+    <addaction name="m_pSelectAll"/>
+    <addaction name="m_pDeselect"/>
+    <addaction name="m_pDelete"/>
+    <addaction name="separator"/>
+    <addaction name="m_pMove"/>
+    <addaction name="m_pRotate"/>
+    <addaction name="m_pZoom"/>
+    <addaction name="m_pSize"/>
+    <addaction name="separator"/>
+    <addaction name="m_pMaterial"/>
+    <addaction name="m_pTexture"/>
+    <addaction name="separator"/>
+    <addaction name="m_pReplicate"/>
+    <addaction name="m_pSceneLayer"/>
+   </widget>
+   <widget class="QMenu" name="m_pMenuView">
+    <property name="title">
+     <string>View(&amp;V)</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="m_pBackgroundColor"/>
+    <addaction name="m_pShowGrid"/>
+    <addaction name="m_pGridColor"/>
+    <addaction name="m_pShowRuler"/>
+    <addaction name="m_pSafe"/>
+    <addaction name="m_pTitleSafe"/>
+    <addaction name="separator"/>
+    <addaction name="m_pOutput"/>
+    <addaction name="m_pMultiView"/>
+    <addaction name="m_pActualSize"/>
+   </widget>
+   <widget class="QMenu" name="m_pMenuHelp">
+    <property name="title">
+     <string>Help(&amp;H)</string>
+    </property>
+    <addaction name="m_pHelp"/>
+    <addaction name="m_pAbout"/>
+    <addaction name="m_pShortCut"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings(&amp;S)</string>
+    </property>
+    <widget class="QMenu" name="menuChangeSize">
+     <property name="title">
+      <string>ChangeSize(&amp;C)</string>
+     </property>
+     <addaction name="actionSmall"/>
+     <addaction name="actionMid"/>
+     <addaction name="actionLarge"/>
+    </widget>
+    <addaction name="actionProjectSet"/>
+    <addaction name="actionFtpSetting"/>
+    <addaction name="menuChangeSize"/>
+    <addaction name="actionChangeLanguage"/>
+   </widget>
+   <addaction name="m_pMenuFile"/>
+   <addaction name="m_pMenuEdit"/>
+   <addaction name="m_pMenuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="m_pMenuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="m_pTBarFile">
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonFollowStyle</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="m_pTbarTexture">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonFollowStyle</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="m_pNewProject">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/NewProject_.png</normaloff>:/L3DArtist/Resources/NewProject_.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Project(&amp;P)</string>
+   </property>
+   <property name="iconText">
+    <string>New Project(P)</string>
+   </property>
+   <property name="toolTip">
+    <string>New Project</string>
+   </property>
+   <property name="statusTip">
+    <string>Create Project File</string>
+   </property>
+   <property name="priority">
+    <enum>QAction::HighPriority</enum>
+   </property>
+  </action>
+  <action name="m_pNewScene">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/NewScene_.png</normaloff>:/L3DArtist/Resources/NewScene_.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Scene(&amp;N)</string>
+   </property>
+   <property name="toolTip">
+    <string>New Scene</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new scene to current project</string>
+   </property>
+  </action>
+  <action name="m_pOpenProject">
+   <property name="text">
+    <string>Open Project(&amp;O)</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Project</string>
+   </property>
+   <property name="statusTip">
+    <string>Open project file</string>
+   </property>
+  </action>
+  <action name="m_pImportScene">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Import_.png</normaloff>:/L3DArtist/Resources/Import_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import Scene(&amp;I)</string>
+   </property>
+   <property name="toolTip">
+    <string>Import Scene</string>
+   </property>
+   <property name="statusTip">
+    <string>Import Scene File</string>
+   </property>
+  </action>
+  <action name="m_pExportScene">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Export_.png</normaloff>:/L3DArtist/Resources/Export_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export Scene(&amp;E)</string>
+   </property>
+   <property name="toolTip">
+    <string>Export Scene</string>
+   </property>
+   <property name="statusTip">
+    <string>Export current Scene File</string>
+   </property>
+  </action>
+  <action name="m_pCloseScene">
+   <property name="text">
+    <string>Close Scene(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Close Scene</string>
+   </property>
+  </action>
+  <action name="m_pDeleteScene">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Remove_.png</normaloff>:/L3DArtist/Resources/Remove_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Scene(&amp;D)</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Scene</string>
+   </property>
+  </action>
+  <action name="m_pSaveScene">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Save_.png</normaloff>:/L3DArtist/Resources/Save_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Scene(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Scene</string>
+   </property>
+   <property name="statusTip">
+    <string>Save current Scene File</string>
+   </property>
+  </action>
+  <action name="m_pSaveAsScene">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/L3DArtist/Resources/SaveAs_.png</normaloff>:/L3DArtist/Resources/SaveAs_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As Scene(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>Save As Scene</string>
+   </property>
+  </action>
+  <action name="m_pRenameScene">
+   <property name="text">
+    <string>Rename Scene(&amp;M)</string>
+   </property>
+   <property name="toolTip">
+    <string>Rename Scene</string>
+   </property>
+  </action>
+  <action name="m_pExtractNode">
+   <property name="text">
+    <string>Extract Node(&amp;N)</string>
+   </property>
+   <property name="toolTip">
+    <string>Extract Node</string>
+   </property>
+  </action>
+  <action name="m_pExtractScene">
+   <property name="text">
+    <string>Extract Scene(&amp;T)</string>
+   </property>
+   <property name="toolTip">
+    <string>Extract Scene</string>
+   </property>
+  </action>
+  <action name="m_pOutputVideo">
+   <property name="text">
+    <string>Output Graphics Video(&amp;O)</string>
+   </property>
+  </action>
+  <action name="m_pReconnect">
+   <property name="text">
+    <string>Reconnect Server(&amp;L)</string>
+   </property>
+   <property name="toolTip">
+    <string>Reconnect Server</string>
+   </property>
+  </action>
+  <action name="m_pExit">
+   <property name="text">
+    <string>Exit(&amp;X)</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="m_pUndo">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Undo_.png</normaloff>:/L3DArtist/Resources/Undo_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo(&amp;U)</string>
+   </property>
+   <property name="toolTip">
+    <string>Undo</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="m_pRedo">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Redo_.png</normaloff>:/L3DArtist/Resources/Redo_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo(&amp;R)</string>
+   </property>
+   <property name="toolTip">
+    <string>Redo</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="m_pCut">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Cut_.png</normaloff>:/L3DArtist/Resources/Cut_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut(&amp;T)</string>
+   </property>
+   <property name="toolTip">
+    <string>Cut</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+  <action name="m_pCopy">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Copy_.png</normaloff>:/L3DArtist/Resources/Copy_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy(&amp;C)</string>
+   </property>
+   <property name="iconText">
+    <string>Copy(C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+  <action name="m_pPaste">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Paste_.png</normaloff>:/L3DArtist/Resources/Paste_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste(&amp;V)</string>
+   </property>
+   <property name="toolTip">
+    <string>Paste</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+  <action name="m_pSelectAll">
+   <property name="text">
+    <string>Select All(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>Select All</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="m_pDeselect">
+   <property name="text">
+    <string>Deselect(&amp;E)</string>
+   </property>
+   <property name="toolTip">
+    <string>Deselect</string>
+   </property>
+  </action>
+  <action name="m_pRename">
+   <property name="text">
+    <string>重命名(&amp;N)</string>
+   </property>
+   <property name="toolTip">
+    <string>重命名</string>
+   </property>
+  </action>
+  <action name="m_pMove">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Move(&amp;M)</string>
+   </property>
+   <property name="toolTip">
+    <string>Move</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+  <action name="m_pRotate">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Rotate(&amp;R)</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+  <action name="m_pZoom">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Scale(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>Scale</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>F7</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+  <action name="m_pMaterial">
+   <property name="text">
+    <string>Material(&amp;E)</string>
+   </property>
+   <property name="toolTip">
+    <string>Material</string>
+   </property>
+  </action>
+  <action name="m_pTexture">
+   <property name="text">
+    <string>Texture(&amp;X)</string>
+   </property>
+   <property name="toolTip">
+    <string>Texture</string>
+   </property>
+  </action>
+  <action name="m_pReplicate">
+   <property name="text">
+    <string>Array Replicate(&amp;Y)</string>
+   </property>
+   <property name="toolTip">
+    <string>Array Replicate</string>
+   </property>
+  </action>
+  <action name="m_pBackgroundColor">
+   <property name="text">
+    <string>Background Color(&amp;B)</string>
+   </property>
+   <property name="toolTip">
+    <string>Background Color</string>
+   </property>
+  </action>
+  <action name="m_pShowGrid">
+   <property name="text">
+    <string>Show Grid(&amp;G)</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Grid</string>
+   </property>
+  </action>
+  <action name="m_pGridColor">
+   <property name="text">
+    <string>Grid Color(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Grid Color</string>
+   </property>
+  </action>
+  <action name="m_pShowRuler">
+   <property name="text">
+    <string>Show Ruler(&amp;R)</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Ruler</string>
+   </property>
+  </action>
+  <action name="m_pSafe">
+   <property name="text">
+    <string>Show Safety Area(&amp;D)
+</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Safety Area</string>
+   </property>
+  </action>
+  <action name="m_pTitleSafe">
+   <property name="text">
+    <string>Show Title Safety Area(&amp;N)</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Title Safety Area</string>
+   </property>
+  </action>
+  <action name="m_pOutput">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Output_.png</normaloff>:/L3DArtist/Resources/Output_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Output Video(&amp;V)</string>
+   </property>
+   <property name="toolTip">
+    <string>Output Video</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="m_pActualSize">
+   <property name="text">
+    <string>Trim Size(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>Trim Size</string>
+   </property>
+  </action>
+  <action name="m_pAnimation">
+   <property name="text">
+    <string>Animation Type Design(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>Animation Type Design</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="m_pChamfer">
+   <property name="text">
+    <string>Chamfer Type Design(&amp;B)</string>
+   </property>
+   <property name="toolTip">
+    <string>Chamfer Type Design</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="m_pUser">
+   <property name="text">
+    <string>User Management</string>
+   </property>
+  </action>
+  <action name="m_pSettings">
+   <property name="text">
+    <string>System Settings(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>System Settings</string>
+   </property>
+  </action>
+  <action name="m_pSafeSetting">
+   <property name="text">
+    <string>Safety Area Settings(&amp;F)</string>
+   </property>
+   <property name="toolTip">
+    <string>Safety Area Settings</string>
+   </property>
+  </action>
+  <action name="m_pHelp">
+   <property name="text">
+    <string>Help(&amp;H)
+</string>
+   </property>
+   <property name="toolTip">
+    <string>Help</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="m_pAbout">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/About_.png</normaloff>:/L3DArtist/Resources/About_.png</iconset>
+   </property>
+   <property name="text">
+    <string>About(&amp;A)...</string>
+   </property>
+   <property name="toolTip">
+    <string>About</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="m_pMultiView">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Multiview_.png</normaloff>:/L3DArtist/Resources/Multiview_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Multi-View(&amp;Z)</string>
+   </property>
+   <property name="toolTip">
+    <string>Multi-View</string>
+   </property>
+  </action>
+  <action name="m_pRemoveProj">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/RemoveProj_.png</normaloff>:/L3DArtist/Resources/RemoveProj_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Project(&amp;R)</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Project</string>
+   </property>
+  </action>
+  <action name="m_pImportNode">
+   <property name="text">
+    <string>Import Node</string>
+   </property>
+  </action>
+  <action name="m_pExportNode">
+   <property name="text">
+    <string>Export Node</string>
+   </property>
+  </action>
+  <action name="m_pChange_Language">
+   <property name="text">
+    <string>Change Language(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Change Language(Chinese and English)</string>
+   </property>
+  </action>
+  <action name="m_pSceneLayer">
+   <property name="text">
+    <string>Scene Layer(&amp;L)</string>
+   </property>
+   <property name="toolTip">
+    <string>Scene Layer</string>
+   </property>
+  </action>
+  <action name="actionProjectSet">
+   <property name="text">
+    <string>ProjectRootSet(&amp;P)</string>
+   </property>
+  </action>
+  <action name="actionFtpSetting">
+   <property name="text">
+    <string>FtpSetting(&amp;F)</string>
+   </property>
+  </action>
+  <action name="m_pDelete">
+   <property name="icon">
+    <iconset resource="l3dartist.qrc">
+     <normaloff>:/L3DArtist/Resources/Remove_.png</normaloff>:/L3DArtist/Resources/Remove_.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete(&amp;D)</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="m_pTga_To_Flg">
+   <property name="text">
+    <string>Tga To Flg</string>
+   </property>
+  </action>
+  <action name="m_pShortCut">
+   <property name="text">
+    <string>ShortCut(&amp;S)...</string>
+   </property>
+  </action>
+  <action name="m_pSize">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Size(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>Size</string>
+   </property>
+   <property name="shortcut">
+    <string>F8</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+  <action name="actionSmall">
+   <property name="text">
+    <string>Small(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionMid">
+   <property name="text">
+    <string>Mid(&amp;M)</string>
+   </property>
+  </action>
+  <action name="actionLarge">
+   <property name="text">
+    <string>Large(&amp;L)</string>
+   </property>
+  </action>
+  <action name="actionChangeLanguage">
+   <property name="text">
+    <string>ChangeLanguage</string>
+   </property>
+  </action>
+  <action name="m_pEnableCardOutput">
+   <property name="text">
+    <string>Enable Card Output</string>
+   </property>
+  </action>
+  <action name="m_pSetCard">
+   <property name="text">
+    <string>Set Card</string>
+   </property>
+  </action>
+  <action name="m_pModifyPwd">
+   <property name="text">
+    <string>Modify Password</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="l3dartist.qrc"/>
+ </resources>
+ <connections/>
+</ui>

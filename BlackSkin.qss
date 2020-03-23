@@ -1,0 +1,4986 @@
+﻿/*************Qt样式表*************/
+
+* {
+    background-color: rgb(37, 37, 38);
+    color: white;
+    selection-background-color: rgb(0, 111, 185);
+}
+
+*::item:selected:!active {
+    background-color: rgb(63, 63, 70);
+    color: white;
+}
+
+QMainWindow, QToolButton, *[framecolor="true"] {
+    background-color: rgb(45, 45, 48);
+}
+
+QMenuBar {
+    background-color: rgb(37, 37, 38);
+}
+
+QGraphicsView {
+	background-color: rgb(45, 45, 48);
+	border: none;
+}
+
+QToolButton#colorEditToolButton {
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+QToolButton#colorEditToolButton:hover {
+    background-color: rgb(70, 110, 150);
+    color: white;
+}
+
+QToolButton#colorEditToolButton:pressed {
+    background-color: rgb(0, 111, 185);
+    color: white;
+}
+
+QPushButton {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+QPushButton:disabled {
+	background-color: rgb(165, 165, 165);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+QPushButton:default {
+    background-color: rgb(70, 110, 150);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(62, 62, 66);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 111, 185);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+QPushButton:checked {
+    background-color:rgb(14, 170, 79);
+    border-radius: 10px;
+    color: rgb(255, 255, 0);
+}
+
+QPushButton#btnPswShow {
+    background-color: transparent;  
+	border: 0px solid rgb(62, 62, 66);
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+QPushButton#btnSplitline {
+	background-color: rgb(55,55,55);
+	color: white;
+}
+
+QPushButton#btnSplitline:disabled {
+	background-color: rgb(55,55,55);
+    color: white;
+}
+
+QPushButton#btnSplitline:default {
+    background-color: rgb(55,55,55);
+    color: white;
+}
+
+QPushButton#btnPanel{
+	background-color: transparent;
+	color: white;
+}
+
+QPushButton#btnPanel:disabled {
+	background-color: transparent;
+	color: white;
+}
+
+QPushButton#btnPanel:default {
+    background-color: transparent;
+	color: white;
+}
+
+QPushButton#btnPanel:hover {
+    background-color: transparent;
+	color: white;
+}
+
+QPushButton#btnPanel:pressed {
+    background-color: transparent;
+	color: white;
+}
+
+QPushButton#btnPanel:checked {
+	background-color: transparent;
+	color: white;
+}
+
+
+*[menubutton="true"] {
+    background-color: rgb(62, 62, 66);
+    color: white;
+}
+
+*[menubutton="true"]:hover {
+    background-color: rgb(84, 166, 247);
+    color: white;
+}
+
+*[menubutton="true"]:pressed {
+    background-color: rgb(0, 111, 185);
+    color: white;
+}
+
+*[AniCtrl="true"] {
+    background-color: rgb(37, 37, 38);
+    padding: 0px;
+    min-width: 18;
+    max-width: 18;
+}
+
+*[AniCtrl="true"]:hover {
+    background-color: rgb(62, 62, 66);
+    padding: 0px;
+    min-width: 18;
+    max-width: 18;
+}
+
+*[AniCtrl="true"]:pressed {
+    background-color: rgb(0, 111, 185);
+    padding: 0px;
+    min-width: 18;
+    max-width: 18;
+}
+
+QCalendarView {
+    color: grey;
+}
+
+QMenu {
+    background-color: rgb(30, 30, 32);
+    border: 1px solid rgb(60, 60, 60);
+}
+
+QMenu::item:disabled {
+    color: gray;
+}
+
+QToolBar {
+    /*background-color: rgb(45, 45, 48);*/
+	background-color:transparent;
+    border: 1px solid rgb(30, 30, 32);
+	/*background-color: rgb(55, 55, 55);*/
+}
+
+QToolBar::item {
+    padding: 5px 10px 5px 10px;
+    background: transparent;
+	/*background-color: rgb(35, 35, 35);*/
+}
+
+QToolBar::action {
+    padding: 5px 10px 5px 10px;
+    /*background: transparent;*/
+	background-color: rgb(30, 30, 32);
+}
+
+QToolBar:handle {
+    background: rgb(55, 55, 55);
+    border-left: 1px dotted yellow;
+    color: rgb(70, 70, 74);
+}
+
+QToolBar::separator {
+    /*background-color: rgb(70, 70, 74);*/
+	background-color: rgb(55, 55, 55);
+    width: 1px;
+    height: 1px;
+}
+
+QAction {
+	background-color: rgb(55, 55, 55);
+}
+
+QScrollBar {
+    background-color: rgb(62, 62, 66);
+}
+
+QScrollBar::handle:vertical {
+    background-color: rgb(104, 104, 104);
+    margin: 15px 3px 15px 3px;
+    min-height: 10px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: rgb(104, 104, 104);
+    margin: 3px 15px 3px 15px;
+    min-width: 10px;
+}
+
+QScrollBar::handle:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+QScrollBar::handle:pressed {
+    background-color: rgb(239, 235, 239);
+}
+
+QScrollBar::handle:disabled {
+    background-color: rgb(62, 62, 66);
+}
+
+QScrollBar::sub-line, QScrollBar::add-line {
+    border: 1px solid rgb(62, 62, 66);
+}
+
+QScrollBar::up-arrow:vertical {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/up-arror.png);
+}
+
+QScrollBar::up-arrow:vertical:hover {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/up-arrow-h.png);
+}
+
+QScrollBar::up-arrow:vertical:pressed {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/up-arrow-p.png);
+}
+QScrollBar::down-arrow:vertical {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/down-arror.png);
+}
+
+QScrollBar::down-arrow:vertical:hover {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/down-arrow-h.png);
+}
+
+QScrollBar::down-arrow:vertical:pressed {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/down-arrow-p.png);
+}
+
+QScrollBar:left-arrow:horizontal {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/left-arror.png);
+}
+
+QScrollBar:left-arrow:horizontal:hover {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/left-arrow-h.png);
+}
+
+QScrollBar:left-arrow:horizontal:pressed {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/left-arrow-p.png);
+}
+
+QScrollBar::right-arrow:horizontal {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/right-arror.png);
+}
+
+QScrollBar::right-arrow:horizontal:hover {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/right-arrow-h.png);
+}
+
+QScrollBar::right-arrow:horizontal:pressed {
+    subcontrol-origin: margin;
+    border-image: url(:/Ampctrl/Recources/image/right-arrow-p.png);
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QTableView {
+	background-color: rgb(50, 50, 50);
+}
+
+QToolTip {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(45, 45, 48);
+}
+
+QSlider#m_pSlider {
+    background-color: rgb(62, 62, 66);
+}
+
+QSlider::groove:horizontal#m_pSlider {
+    height: 4px;
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal#m_pSlider {
+    /*background-color: rgb(45, 45, 48);*/
+    background-color: rgb(0, 111, 185);
+    border: 1px solid rgb(20, 20, 20);
+    width: 8px;
+    margin: -2px 0;
+    /*border-radius: 3px;*/
+}
+
+QComboBox {
+    border: 1px solid rgb(62, 62, 66);
+    background-color: rgb(37, 37, 38);
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(62, 62, 66);
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(0, 111, 185);
+}
+
+QComboBox::drop-down {
+    border: 1px solid rgb(62, 62, 66);  
+}
+
+QComboBox::down-arrow {
+    image: url(:/Ampctrl/Recources/image/down-arror.png);
+}
+
+QComboBox::down-arrow:hover {
+    image: url(:/Ampctrl/Recources/image/down-arrow-h.png);
+}
+
+QComboBox::down-arrow:pressed {
+    image: url(:/Ampctrl/Recources/image/down-arrow-p.png);
+}
+
+QComboBox:disabled {
+   background-color:rgb(70,70,70);
+   color:rgb(150,150,150);
+}
+
+QSpinBox, QDoubleSpinBox {
+    border: 1px solid rgb(62, 62, 66);
+    background-color: rgb(37, 37, 38);
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover {
+    border: 1px solid rgb(0, 111, 185);
+    background-color: rgb(63, 63, 70);
+}
+
+QSpinBox:disabled, QDoubleSpinBox:disabled{
+    background-color: gray;
+    border: 1px solid gray;
+}
+
+
+QDoubleSpinBox::up-arrow, QSpinBox::up-arrow {
+    image: url(:/Ampctrl/Recources/image/add-arrow.png);
+}
+
+QDoubleSpinBox::up-arrow:hover, QSpinBox::up-arrow:hover {
+    image: url(:/Ampctrl/Recources/image/add-arrow-h.png);
+}
+
+QDoubleSpinBox::up-arrow:pressed, QSpinBox::up-arrow:pressed {
+    image: url(:/Ampctrl/Recources/image/add-arrow-p.png);
+}
+
+
+QSpinBox::up-button, QDoubleSpinBox::up-button {
+    border: 1px solid rgb(62, 62, 66);
+}
+
+
+QDoubleSpinBox::down-arrow, QSpinBox::down-arrow {
+    image: url(:/Ampctrl/Recources/image/sub-arrow.png);
+}
+
+QDoubleSpinBox::down-arrow:hover, QSpinBox::down-arrow:hover {
+    image: url(:/Ampctrl/Recources/image/sub-arrow-h.png);
+}
+
+QDoubleSpinBox::down-arrow:pressed, QSpinBox::down-arrow:pressed {
+    image: url(:/Ampctrl/Recources/image/sub-arrow-p.png);
+}
+
+
+QSpinBox::down-button, QDoubleSpinBox::down-button {
+    border: 1px solid rgb(62, 62, 66);
+}
+
+/*QFrame#pFrameTitleScene {
+    border-top: 1px solid rgb(62, 62, 66);
+    border-left: 1px solid rgb(62, 62, 66);
+    border-right: 1px solid rgb(62, 62, 66);
+}*/
+
+/**[framePreview="true"] {
+    border: 1px solid rgb(62, 62, 66);
+}
+
+QLabel#lblTitle {
+    border-image: url(:/Ampctrl/Recources/sysbutton/bk.png);
+    color: white;
+}*/
+
+QLabel#lblTitle {
+    background-color:rgb(37,37,38);
+    color: white;
+}
+
+QPushButton#btnMin {
+    border-image: url(:/Ampctrl/Recources/sysbutton/min.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnMin:hover {
+    border-image: url(:/Ampctrl/Recources/sysbutton/minhov.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnMin:pressed {
+    border-image: url(:/Ampctrl/Recources/sysbutton/minpress.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnMax {
+    border-image: url(:/Ampctrl/Recources/sysbutton/normal.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnMax:hover {
+    border-image: url(:/Ampctrl/Recources/sysbutton/normalhov.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnMax:pressed {
+    border-image: url(:/Ampctrl/Recources/sysbutton/normalpress.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnClose {
+    border-image: url(:/Ampctrl/Recources/sysbutton/close.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnClose:hover {
+    border-image: url(:/Ampctrl/Recources/sysbutton/closehov.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+QPushButton#btnClose:pressed {
+    border-image: url(:/Ampctrl/Recources/sysbutton/closepress.png);
+    padding: 0px;
+    min-width: 34px;
+    max-width: 34px;
+}
+
+
+/********** CtrlBtnSize *********/
+QPushButton#PreviewNormal{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#PreviewNormal:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#PreviewNormal:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+
+QPushButton#PreviewBig{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Media-Play48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#PreviewBig:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Media-Play48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#PreviewBig:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Media-Play48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+/****************************************************/
+
+
+/**********Source**********/
+QPushButton#Sour_Refresh{
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Refresh.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Sour_Refresh:hover {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Refresh.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Sour_Refresh:pressed {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Refresh.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Sour_Search{
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Sour_Search:hover {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Sour_Search:pressed {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Sour_Trans{
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Trans.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Sour_Trans:hover {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Trans.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Sour_Trans:pressed {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Trans.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+/****************Source**********************/
+
+QPushButton#btnTrans{
+	height:16px;
+	width:16px;
+	min-width: 32px;
+    max-width: 32px;
+	background-color: transparent;
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Trans.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#btnTrans:hover {
+	height:16px;
+	width:16px;
+	min-width: 32px;
+    max-width: 32px;
+	background-color:rgb(80,80,80);
+	border:0px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Trans.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#btnTrans:pressed {
+	height:16px;
+	width:16px;
+	min-width: 32px;
+    max-width: 32px;
+	background-color: transparent;
+	border:1px solid rgb(71, 71, 71);
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Trans.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#btnPlay{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#btnPlay:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#btnPlay:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#btnPlay:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled-Play.png);
+    color: white;
+}
+
+QPushButton#btnPlay:default {
+    background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled-Play.png);
+    color: white;
+}
+
+
+QPushButton#btnPause{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Pause.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#btnPause:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Pause.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#btnPause:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Pause.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#btnStop{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Stop.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#btnStop:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Stop.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#btnStop:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Stop.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SigCycle{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Single-Cycle.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#SigCycle:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Single-Cycle.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SigCycle:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Single-Cycle.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SigCycle:checked {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Signal-Play-Checked.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+
+QPushButton#OrderPlay{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Order-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#OrderPlay:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Order-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OrderPlay:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Order-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OrderPlay:checked {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Order-Play-Checked.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+
+QPushButton#RepeatAll{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Repeat-All.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#RepeatAll:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Repeat-All.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#RepeatAll:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Repeat-All.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#RepeatAll:checked {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-Repeat-All-Checked.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+
+QPushButton#RecordStart{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Record-Start.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#RecordStart:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Record-Start.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#RecordStart:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Record-Start.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QGroupBox{
+    border: 1px solid rgb(28,151,234);
+    border-radius:6px;
+    margin-top:12px;
+}
+
+QGroupBox:title {
+    color:rgb(28,151,234);
+    subcontrol-origin: margin;
+    left: 10px;
+}
+
+QGroupBox::indicator:unchecked {
+    image: url(:/Ampctrl/Recources/image/UnCheck_.png);
+	/*image: url(:/Ampctrl/Recources/image/UCheckIn.png);*/
+}
+
+QGroupBox::indicator:checked {
+    image: url(:/Ampctrl/Recources/image/Check_.png);
+	/*image: url(:/Ampctrl/Recources/image/CheckIn.png);*/
+}
+
+/*******进度条样式********/
+QProgressBar#ReSpace {
+	/*border: 1px solid rgb(28,151,234);*/
+	border: 1px solid rgb(0,245,255);
+    border-radius:6px;
+    text-align: center;
+	background: rgb(68, 69, 73);
+    /*background: rgb(37, 37, 38);*/
+}
+QProgressBar#ReSpace::chunk {
+    /*background: rgb(0, 160, 230);*/
+	background: rgb(102,205,170);
+}
+
+QProgressBar#OneSpace {
+	border: 1px solid rgb(28,151,234);
+    border-radius:6px;
+    text-align: center;
+	background: rgb(68, 69, 73);
+    /*background: rgb(37, 37, 38);*/
+}
+QProgressBar#OneSpace::chunk {
+    background: rgb(0, 160, 160);
+}
+
+QProgressBar#TwoSpace {
+	border: 1px solid rgb(28,151,234);
+    border-radius:6px;
+    text-align: center;
+	background: rgb(68, 69, 73);
+    /*background: rgb(37, 37, 38);*/
+}
+QProgressBar#TwoSpace::chunk {
+    background: rgb(255, 160, 230);
+}
+
+/* playlist button start */
+
+QPushButton#Play24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+QPushButton#Play24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Play24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Play24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Play-Disabled24px.png);
+    color: white;
+}
+
+QPushButton#Play24px:default {
+    background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Play-Disabled24px.png);
+    color: white;
+}
+
+
+QPushButton#Play48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Media-Play48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+QPushButton#Play48px:hover {
+	height:60px;
+	width:80;
+	min-width: 60;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Media-Play48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Play48px:pressed {
+	height:60px;
+	width:80px;
+	min-width:60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Media-Play48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Play48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Play-Disabled48px.png);
+    color: white;
+}
+QPushButton#Play48px:default {
+    background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Play-Disabled48px.png);
+    color: white;
+}
+
+QPushButton#Stop24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Stop24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Stop24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Stop24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Stop24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Stop24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Stop24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Stop24px.png);
+    color: white;
+}
+
+
+QPushButton#Stop48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Stop48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Stop48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Stop48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Stop48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Stop48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Stop48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Stop48px.png);
+    color: white;
+}
+
+
+QPushButton#Up24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Up24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Up24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Up24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Up24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Up24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Up24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Up24px.png);
+    color: white;
+}
+
+QPushButton#Up48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Up48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Up48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Up48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Up48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Up48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Up48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Up48px.png);
+    color: white;
+}
+
+QPushButton#Down24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Down24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Down24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Down24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Down24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Down24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Down24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Down24px.png);
+    color: white;
+}
+
+QPushButton#Save24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Save24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Save24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Save24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Save24px.png);
+    color: white;
+}
+
+QPushButton#Save48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Save48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Save48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Save48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Save48px.png);
+    color: white;
+}
+
+QPushButton#Fresh{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Fresh.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Fresh:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Fresh.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Fresh:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Fresh.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Fresh:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Refresh.png);
+    color: white;
+}
+
+QPushButton#Fresh48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Refresh48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Fresh48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Refresh48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Fresh48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Refresh48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Fresh48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Refresh48px.png);
+    color: white;
+}
+
+QPushButton#SaveTip{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SaveTip.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#SaveTip:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SaveTip.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SaveTip:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SaveTip.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SaveTip:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Save24px.png);
+    color: white;
+}
+
+QPushButton#SaveTip48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#SaveTip48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SaveTip48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Save48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SaveTip48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Save48px.png);
+    color: white;
+}
+
+QPushButton#NoSave24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/NoSave24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#NoSave24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/NoSave24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#NoSave24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/NoSave24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#NoSave48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/NoSave24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#NoSave48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/NoSave24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#NoSave48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/NoSave24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Down48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Down48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Down48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Down48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Down48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Down48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Down48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Down48px.png);
+    color: white;
+}
+
+QPushButton#Free24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Free24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Free24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Free24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Free24px.png);
+    color: white;
+}
+
+QPushButton#Free48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Free48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Free48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Free48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Free48px.png);
+    color: white;
+}
+
+QPushButton#SignalCycle24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SingleCycle24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#SignalCycle24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SingleCycle24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SignalCycle24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SingleCycle24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SignalCycle24px:checked {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Signal-Play-Checked24px.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+QPushButton#SignalCycle24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Signal24px.png);
+    color: white;
+}
+
+QPushButton#SignalCycle48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SingleCycle48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#SignalCycle48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SingleCycle48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SignalCycle48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/SingleCycle48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#SignalCycle48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Signal48px.png);
+    color: white;
+}
+QPushButton#SignalCycle48px:checked {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Signal-Play-Checked48px.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+
+QPushButton#OrderPlay24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Order-Cycle24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#OrderPlay24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Order-Cycle24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OrderPlay24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Order-Cycle24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OrderPlay24px:checked {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Order-Play-Checked24px.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+QPushButton#OrderPlay24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Order.png);
+    color: white;
+}
+
+QPushButton#OrderPlay48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Order-Cycle48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#OrderPlay48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Order-Cycle48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OrderPlay48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Order-Cycle48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OrderPlay48px:checked {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Order-Play-Checked48px.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+QPushButton#OrderPlay48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Order48px.png);
+    color: white;
+}
+
+QPushButton#RepeatAll24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#RepeatAll24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#RepeatAll24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#RepeatAll24px:checked {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All-Checked24px.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+QPushButton#RepeatAll24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Repeat24px.png);
+    color: white;
+}
+
+QPushButton#RepeatAll48px{
+	height:60px;
+	width:80px;
+	min-width: 40px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#RepeatAll48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 40px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#RepeatAll48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 40px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#RepeatAll48px:checked {
+	height:60px;
+	width:80px;
+	min-width: 40px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/Repeat-All-Checked48px.png);
+	/*background-repeat: no-repeat;*/
+	/*background-position:center;*/	
+}
+QPushButton#RepeatAll48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Repeat48px.png);
+    color: white;
+}
+
+QPushButton#Record24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Record24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Record24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Record24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Record24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Record24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Record24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Record24px.png);
+    color: white;
+}
+
+QPushButton#Add24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Add24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Add24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Add24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Add24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Add24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Add24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Add24px.png);
+    color: white;
+}
+
+QPushButton#Delete48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Delete48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Delete48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Delete48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Delete48px.png);
+    color: white;
+}
+
+QPushButton#Delete24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Delete24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Delete24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Delete24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Delete24px.png);
+    color: white;
+}
+
+QPushButton#Close24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Close24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Close24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Close24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Close24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Close24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SignalForward{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Signal-Forword.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#SignalForward:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Signal-Forword.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SignalForward:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Signal-Forword.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SignalRewind{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Signal-Rewind.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#SignalRewind:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Signal-Rewind.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#SignalRewind:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Signal-Rewind.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#FastForward{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Fast-Forward.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#FastForward:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Fast-Forward.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#FastForward:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Fast-Forward.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#FastRewind{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Fast-Rewind.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#FastRewind:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Fast-Rewind.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#FastRewind:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Fast-Rewind.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Prepare{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Prepare24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Prepare:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Prepare24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Prepare:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Prepare24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Prepare:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Prepare24px.png);
+    color: white;
+}
+
+QPushButton#Prepare48px{
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Prepare48px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+QPushButton#Prepare48px:hover {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Prepare48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Prepare48px:pressed {
+	height:60px;
+	width:80px;
+	min-width: 60px;
+    max-width: 80px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Prepare48px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Prepare48px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Prepare48px.png);
+    color: white;
+}
+
+QPushButton#Play{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+QPushButton#Play:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Play:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Play:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled-Play.png);
+    color: white;
+}
+
+QPushButton#Play:default {
+    background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled-Play.png);
+    color: white;
+}
+
+QPushButton#PlayRed{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Media-Play-Red.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#PlayRed:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Media-Play-Red.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#PlayRed:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Media-Play-Red.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Reset{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Command-Reset.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Reset:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Command-Reset.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Reset:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Command-Reset.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Pause{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Pause.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Pause:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Pause.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Pause:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Pause.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#FreeChan{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#FreeChan:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#FreeChan:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Free.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+
+QPushButton#ToStart{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToStart.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#ToStart:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToStart.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToStart:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToStart.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToEnd{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToEnd.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#ToEnd:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToEnd.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToEnd:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToEnd.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToInPoint{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToInPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#ToInPoint:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToInPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToInPoint:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToInPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToOutPoint{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToOutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#ToOutPoint:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToOutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToOutPoint:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-ToOutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#InPoint{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-InPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#InPoint:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-InPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#InPoint:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-InPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OutPoint{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-OutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#OutPoint:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-OutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#OutPoint:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-OutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Stop{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Stop.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+
+QPushButton#Stop{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Stop.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Stop:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Stop.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Stop:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Stop.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Stop:disabled {
+	background-color: rgb(80,80,80);
+    color: white;
+}
+
+QPushButton#Stop:default {
+    background-color: rgb(80,80,80);
+    color: white;
+}
+
+
+QPushButton#MoveUp{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Up.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#MoveUp:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Up.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#MoveUp:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Up.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#MoveDown{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Down.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#MoveDown:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Down.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#MoveDown:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Down.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Clean{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Clean.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Clean:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Clean.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Clean:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Clean.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Search{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Search:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Search:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Search20px{
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Search20px:hover {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Search20px:pressed {
+	height:20px;
+	width:20px;
+	min-width: 20px;
+    max-width: 20px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Search.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#CleInOut{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-CleInOutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#CleInOut:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-CleInOutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#CleInOut:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-CleInOutPoint.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Apply{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Apply.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Apply:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Apply.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Apply:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Apply.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#PlayPoint{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play-Point.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#PlayPoint:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play-Point.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#PlayPoint:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Play-Point.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#PlayPointRed{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play-Point-Red.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#PlayPointRed:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play-Point-Red.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#PlayPointRed:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play-Point-Red.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+/* playlist button end */
+
+/* Video editing button */
+QPushButton#ToStart24px{
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/ToStart24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#ToStart24px:hover {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/ToStart24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToStart24px:pressed {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/ToStart24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToEnd24px{
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/ToEnd24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#ToEnd24px:hover {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/ToEnd24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#ToEnd24px:pressed {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/ToEnd24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Next24px{
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Next.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Next24px:hover {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Next.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Next24px:pressed {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Next.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Last24px{
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Last.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Last24px:hover {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Last.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Last24px:pressed {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Last.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Play24px{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+QPushButton#Play24px:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Play24px:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Play24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+QPushButton#Play24px:disabled {
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/Disabled_Play24px.png);
+    color: white;
+}
+
+QPushButton#Pause24px{
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Pause24px.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Pause24px:hover {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Pause24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Pause24px:pressed {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Pause24px.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Apply{
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Apply.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Apply:hover {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Apply.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Apply:pressed {
+	height:24px;
+	width:24px;
+	min-width: 24px;
+    max-width: 24px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/Apply.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+/* Video editing button end*/
+
+QPushButton#TranDel{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#TranDel:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranDel:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Delete.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranModif{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Modification.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#TranModif:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Modification.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranModif:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Modification.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranAdd{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Add.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#TranAdd:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Add.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranAdd:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Add.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Subtract{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Del.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Subtract:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Del.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Subtract:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Del.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Modification{
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Mdf.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#Modification:hover {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Mdf.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#Modification:pressed {
+	height:30px;
+	width:40px;
+	min-width: 30px;
+    max-width: 40px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Mdf.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranLog{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Log.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#TranLog:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Log.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranLog:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Log.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranClo{
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Close.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+QPushButton#TranClo:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Close.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QPushButton#TranClo:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	/*border:1px solid rgb(71, 71, 71);*/
+	border-radius:5px;
+	background-image: url(:/Ampctrl/Recources/image/VS-Close.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+/* New button end*/
+
+QStatusBar {
+    /*background-color: rgb(0, 111, 185);*/
+    background-color: rgb(45, 45, 48);
+    color: white;
+}
+
+*[statusbk="true"] {
+    /*background-color: rgb(0, 111, 185);*/
+    background-color: rgb(45, 45, 48);
+    color: white;
+}
+
+QHeaderView{
+	font-size:16px;
+}
+
+QHeaderView::section {
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+QHeaderView::section { 
+	height:30px;
+	border:0px; 
+	background-color:rgb(39,37,38); 
+	color:white;
+} 
+
+QHeaderView::section:hover { 
+	border:1px; 
+	background-color:rgb(28,151,234); 
+	color:white; 
+}
+
+/**********表头**********/
+QHeaderView#SListHView{
+	border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    min-height: 30px;
+}
+
+QHeaderView#SListHView::section {
+    border: none;
+    color: white;
+    background: transparent;
+    padding-left: 5px;
+} 
+
+QHeaderView#SListHView::section:hover { 
+	border:1px; 
+	background: rgb(255, 255, 255);
+	color:white; 
+}
+
+QHeaderView#SListHView::section:horizontal:pressed {
+        background: rgb(255, 255, 255);
+}
+
+/**********表格**********/
+QTableView#newTabView {
+        border: 1px solid rgb(45, 45, 45);
+        background: rgb(57, 58, 60);
+        gridline-color: rgb(60, 60, 60);
+}
+QTableView#newTabView::item {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+        background: rgb(72, 72, 74);
+        border-right: 1px solid rgb(45, 45, 45);
+        border-bottom: 1px solid rgb(45, 45, 45);
+}
+QTableView#newTabView::item:selected {
+        background: rgba(255, 255, 255, 40);
+}
+QTableView#newTabView::item:selected:!active {
+        color: white;
+}
+QTableView#newTabView::indicator {
+        width: 20px;
+        height: 20px;
+}
+
+/***************表格完***************/
+
+QTabBar {
+    background-color: rgb(45, 45, 48);
+}
+
+QTabBar::tear {
+    background-color: rgb(63, 63, 70);
+    border-left: 1px solid rgb(62, 62, 66);
+    border-top: 1px solid rgb(62, 62, 66);
+    border-bottom: 1px solid rgb(62, 62, 66);
+	height: 40px;
+}
+
+QTabBar::tab:selected {
+    background-color: rgb(0, 111, 185);
+    color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+QTabBar::tab:!selected {
+    background-color: rgb(63, 63, 70);
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+QTabBar::tab:!selected:hover {
+    background-color: rgb(80, 80, 80);
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+QTabBar QToolButton {
+    background-color: rgb(100, 100, 100);
+    border: 1px solid rgb(100, 100, 100);
+}
+
+QTabBar QToolButton:hover {
+    background-color: rgb(80, 80, 80);
+    border: 1px solid rgb(80, 80, 80);
+}
+
+QTabBar QToolButton:pressed {
+    background-color: rgb(0, 111, 185);
+    border: 1px solid rgb(0, 111, 185);
+}
+
+QTabBar QToolButton:disabled {
+    background-color: gray;
+    border: 1px solid gray;
+}
+
+/**添加QTabBar::closeButton样式*/
+
+QTabBar::close-button { 
+	height:16px;
+	width:16px;
+	min-width: 16px;
+	max-width: 16px;
+	background-color: transparent;
+	background-image: url(:/Ampctrl/Recources/image/VS-TabClose.png);
+	background-repeat: no-repeat;
+	background-position:center;
+} 
+
+QTabBar::close-button:hover {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color:rgb(80,80,80);
+	background-image: url(:/Ampctrl/Recources/image/VS-TabClose.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+QTabBar::close-button:pressed {
+	height:16px;
+	width:16px;
+	min-width: 16px;
+    max-width: 16px;
+	background-color: transparent;
+	border:1px solid rgb(71, 71, 71);
+	/*border-radius:5px;*/
+	background-image: url(:/Ampctrl/Recources/image/VS-TabClose.png);
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
+/**添加QTabBar::closeButton样式*/
+
+QFrame#pWidgetControl {
+    /*border-top: 1px solid rgb(62, 62, 66);
+    border-left: 1px solid rgb(62, 62, 66);
+    border-right: 1px solid rgb(62, 62, 66);*/
+    background-color: rgb(45, 45, 48);
+}
+
+/*QFrame#pFrameView {
+    border-bottom: 1px solid rgb(62, 62, 66);
+    border-right: 1px solid rgb(62, 62, 66);
+    border-left: 1px solid rgb(red);
+}*/
+
+
+QTreeView {
+    alternate-background-color: rgb(37, 37, 38);
+    background-color: rgb(37, 37, 38);
+    color: rgb(128, 128, 128);
+    border: 0px solid rgb(45, 45, 48);
+    selection-background-color: rgb(0, 111, 185);
+    selection-color: white;
+}
+
+QTreeView::item {
+    min-height: 18px;
+}
+
+/*QTreeView::branch:selected:!active {
+    background-color: rgb(63, 63, 67);
+}*/
+
+/*QTreeView::branch:has-children:!has-siblings:closed, QTreeView::branch:closed:has-children:has-siblings {
+	background-color: rgb(62, 62, 66);
+    border-image: none;
+    image: url(:/Ampctrl/Recources/image/itemCollapsedDarkThemeIcon.png);
+	selection-background-color: rgb(0, 111, 185);
+}
+
+QTreeView::branch:open:has-children:!has-siblings, QTreeView::branch:open:has-children:has-siblings {
+	background-color: rgb(62, 62, 66);
+	border-image: none;
+    image: url(:/Ampctrl/Recources/image/itemExpandedDarkThemeIcon.png);
+	selection-background-color: rgb(0, 111, 185);
+}*/
+
+
+QTreeView::item:selected:active
+{  
+    background: rgb(0, 122, 204);  
+}  
+  
+QTreeView::item:selected:!active 
+{  
+   background: rgb(0, 122, 204);  
+} 
+ 
+QTableWidget#m_pTableWidget::item:selected:active
+{  
+    background: rgb(0, 122, 204);  
+}  
+  
+QTableWidget#m_pTableWidget::item:selected:!active 
+{  
+   background: rgb(0, 122, 204);  
+}  
+
+QWidget#PlayListCtrl {
+    background-color: rgb(50, 50, 50);
+}
+
+QWidget#Spacer {
+	background-color:transparent;
+    /*background-color: rgb(50, 50, 50);*/
+}
+
+QListWidget {
+    border: 1px solid rgb(62, 62, 66);
+    /*border: 0px solid rgb(45, 45, 48);*/
+    background-color: rgb(37, 37, 38);
+    /*selection-background-color: rgb(0, 100, 150);*/
+    selection-color: white;
+}
+
+QListWidget::item:selected {
+    background-color: rgb(0, 111, 185);
+    color: white;
+}
+
+/*NodeListWidget
+{
+    border: 1px solid rgb(62, 62, 66);
+}*/
+
+QWidget#m_pWidget {
+	border: 1px solid rgb(62, 62, 66);
+    background-color: rgb(37, 37, 38);
+}
+
+QWidget#m_pContainer {
+    background-color: rgb(37, 37, 38);
+	/*background-color: rgb(45, 45, 48);*/
+    /*border: 0px solid rgb(37, 37, 38);*/
+	border: 1px solid rgb(62, 62, 66);
+}
+
+QWidget#SerList {
+    background-color: rgb(37, 37, 38);
+	/*background-color: rgb(55, 55, 55);*/
+    /*border: 0px solid rgb(37, 37, 38);*/
+	border: 1px solid rgb(0, 111, 185);
+}
+
+
+
+/*tablewidget 样式*/ 
+QTableWidget#SerlistTable { 
+	/*selection-background-color:rgb(0, 122, 204); */
+	background-color: rgb(37, 37, 38);					/*整个表格的背景色，这里为白色*/ 
+	border:1px solid rgb(62, 62, 66);					/*边框为1像素，灰色*/ 
+	/*gridline-color:lightgray;					这个是表格的格子线的颜色，为亮灰*/ 
+}
+
+QTableWidget#SerlistTable::item:selected:active
+{  
+    background: rgb(0, 122, 204);  
+} 
+
+
+AttributeItem {
+    background-color: rgb(37, 37, 38);
+}
+
+QLabel#m_pNameLabel {
+    background-color: rgb(37, 37, 38);
+}
+
+QFrame#m_pLblScreenPreview {
+    background-color: black;
+}
+
+QLineEdit {
+    background-color: rgb(37, 37, 38);
+    color: white;
+    border: 1px solid rgb(62, 62, 66);
+}
+
+QFrame#pFrameLeft {
+    background-color: rgb(62, 62, 66);
+}
+
+*[FrameTitle="true"] {
+    background-color: rgb(62, 62, 66);
+    color: white;
+}
+
+*[SpaceItem="true"] {
+    background-color: rgb(37, 37, 38);
+}
+
+*[Toolbutton="true"] {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+}
+
+*[Toolbutton="true"]:default {
+    background-color: rgb(70, 110, 150);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+}
+
+*[Toolbutton="true"]:hover {
+    background-color: rgb(70, 110, 150);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+}
+
+*[Toolbutton="true"]:pressed {
+    background-color: rgb(0, 111, 185);
+    color: white;
+    border: 0px solid rgb(62, 62, 66);
+}
+
+QFrame#pFrameLeft_toolbox {
+    background-color: rgb(45, 45, 48);
+    border: 0px solid rgb(37, 37, 38);
+}
+
+QFrame#pFrameLeft_toolboxObj {
+    background-color: rgb(45, 45, 48);
+    border: 0px solid rgb(37, 37, 38);
+}
+
+QFrame#pFrameLeft_toolboxMaterial {
+    background-color: rgb(45, 45, 48);
+    border: 0px solid rgb(37, 37, 38);
+}
+
+QFrame#pFrameLeft_toolboxProperty {
+    background-color: rgb(45, 45, 48);
+    border: 0px solid rgb(37, 37, 38);
+}
+
+*[background="true"] {
+    background-color: rgb(37, 37, 38);
+}
+
+QScrollArea {
+    border: 1px solid rgb(37, 37, 38);
+}
+
+QFrame#frameProperty {
+    border: 0px solid rgb(62, 62, 66);
+}
+
+QToolButton#buttonParent {
+    background-color: rgb(62, 62, 66);
+    border: 1px solid rgb(62, 62, 66);
+}
+
+QToolButton#buttonParent:hover {
+    background-color: rgb(80, 80, 80);
+    border: 1px solid rgb(80, 80, 80);
+}
+
+QToolButton#buttonParent:pressed {
+    background-color: rgb(0, 111, 185);
+    border: 1px solid rgb(0, 111, 185);
+}
+
+QToolButton#buttonParent:checked {
+    background-color: rgb(62, 62, 66);
+    border: 1px solid rgb(62, 62, 66);
+}
+
+*[SpinBox="true"] {
+    max-width: 40px;
+    min-width: 40px;
+    border: none;
+}
+
+AboutDlg {
+    border: 1px solid rgb(0, 111, 185);
+}
+
+QTreeView::item QCheckBox::indicator:unchecked {
+    image: url(:/Ampctrl/Recources/image/UnCheck_.png);
+}
+
+QTreeView::item QCheckBox::indicator:checked {
+    image: url(:/Ampctrl/Recources/image/Check_.png);
+}
+
+QCheckBox {
+    border:0px;
+}
+
+QCheckBox::disabled {
+    color: rgb(150, 150, 150);
+    border: 0px solid rgb(62, 62, 66);
+	background-color: rgb(40, 40, 40);
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/Ampctrl/Recources/image/UnCheck_.png);
+	/*image: url(:/Ampctrl/Recources/image/UCheckIn.png);*/
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/Ampctrl/Recources/image/Check_.png);
+	/*image: url(:/Ampctrl/Recources/image/CheckIn.png);*/
+}
+
+/*QMainWindow::separator:hover {
+    background-color: rgb(62, 62, 66);
+}*/
+
+QDockWidget {
+    border: 1px solid rgb(62, 62, 66);
+}
+
+QDockWidget {
+    titlebar-close-icon: url(:/Ampctrl/Recources/image/DockClose_.png);
+    titlebar-normal-icon: url(:/Ampctrl/Recources/image/DockFloat_.png);
+}
+
+QDockWidget::close-button {
+    border: none;
+    icon-size: 18px;
+}
+
+QDockWidget::close-button:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+QDockWidget::close-button:pressed {
+    background-color: rgb(0, 151, 251);
+}
+
+QDockWidget::float-button {
+    border: none;
+    icon-size: 18px;
+}
+
+QDockWidget::float-button:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+QDockWidget::float-button:pressed {
+    background-color: rgb(0, 151, 251);
+}
+
+QDockWidget::title {
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+    border-top: 1px solid rgb(37, 37, 38);
+    border-left: 1px solid rgb(37, 37, 38);
+    border-right: 1px solid rgb(37, 37, 38);
+    /*background: url(:/Ampctrl/Recources/image/title.PNG);*/
+    /*background-color: rgb(0, 122, 204);*/
+}
+
+QDockWidget::fous {
+	border:5px solid #A5A6A1;
+}
+
+QTabWidget {
+    border: 0px solid rgb(62, 62, 66);
+}
+
+QTabWidget::pane {
+    border: none;
+}
+
+QTabWidget#SwitchTab:pane
+{ 
+	border: 1px solid rgb(28,151,234); 
+	top: -1px;background-color:rgb(45, 45, 48);
+}
+QTabWidget#SwitchTab>QTabBar::tab
+{
+	height:22px; 
+	background-color:rgb(45, 45, 48); 
+	margin-right: 2px; 
+	margin-bottom:-2px;
+}
+QTabWidget#SwitchTab>QTabBar::tab:selected
+{
+	border:1px solid rgb(28,151,234);
+	border-bottom-color: none;
+}
+QTabWidget#SwitchTab>QTabBar::tab:!selected
+{
+	border-bottom: 3px solid rgb(28,151,234);
+}
+
+QTabBar#MenuTab::tab{
+   width:200px;
+}
+
+QTabBar {
+    background-color: rgb(45, 45, 48);
+}
+
+QTabBar::tear {
+    background-color: rgb(63, 63, 70);
+    border-left: 1px solid rgb(62, 62, 66);
+    border-top: 1px solid rgb(62, 62, 66);
+    border-bottom: 1px solid rgb(62, 62, 66);
+}
+QTabBar::tab:selected {
+    background-color: rgb(37, 37, 38);
+	/*color: rgb(205, 92, 92);*/
+    color: rgb(0, 111, 185);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+QTabBar::tab:!selected {
+    background-color: transparent;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+QTabBar::tab:!selected:hover {
+    background-color: rgb(62, 62, 64);
+    color: rgb(84, 166, 247);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+QTabBar QToolButton {
+    background-color: rgb(100, 100, 100);
+    border: 1px solid rgb(100, 100, 100);
+}
+
+QTabBar QToolButton:hover {
+    background-color: rgb(80, 80, 80);
+    border: 1px solid rgb(80, 80, 80);
+}
+
+QTabBar QToolButton:pressed {
+    background-color: rgb(0, 111, 185);
+    border: 1px solid rgb(0, 111, 185);
+}
+
+QTabBar QToolButton:disabled {
+    background-color: gray;
+    border: 1px solid gray;
+}
+
+QFrame#FrameCtrl {
+    background-color: rgb(45, 45, 48);
+    border-top: 1px solid rgb(37, 37, 38);
+    /*border-left: 1px solid rgb(37, 37, 38);
+    border-right: 1px solid rgb(37, 37, 38);
+    border-bottom: 1px solid rgb(37, 37, 38);*/
+}
+
+*[ctrlbk="true"] {
+    background-color: rgb(45, 45, 48);
+}
+
+QWidget#centralWidget {
+    background-color: rgb(45, 45, 48);
+    /*background-color: rgb(45, 45, 48);*/
+    /*border: 2px solid rgb(37, 37, 38);*/
+    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(30, 30, 30), stop: 0.4 rgb(37, 37, 38), stop:1 rgb(45, 45, 48));*/
+}
+
+QSpinBox#m_pSpinBoxFrame_dockani {
+    max-width: 40px;
+    min-width: 40px;
+    min-height: 17px;
+    max-height: 17px;
+    /*background-color: rgb(30, 30, 30);*/
+}
+
+QLabel#pLblFrame_dockani {
+    border-top: 1px solid rgb(62, 62, 66);
+    border-right: 1px solid rgb(62, 62, 66);
+    border-bottom: 1px solid rgb(62, 62, 66);
+    background-color: rgb(45, 45, 48);
+}
+
+QProgressBar {
+    border: 1px solid rgb(62, 62, 66);
+    /*background-color: rgb(37, 37, 38);*/
+}
+
+*[timelineframe="true"] {
+    border-top: 1px solid rgb(37, 37, 38);
+    border-left: 1px solid rgb(37, 37, 38);
+    border-right: 1px solid rgb(37, 37, 38);
+    background-color: rgb(20, 20, 20);
+}
+
+/**[ctrlspinbox="true"] {
+    max-width: 40px;
+    min-width: 40px;
+}*/
+
+QFrame#pFrameSlider {
+    background-color: rgb(62, 62, 66);
+}
+
+QLabel#ctrlbk_x {
+    /*color: red;*/
+    background-color: transparent;
+}
+
+QLabel#ctrlbk_y {
+    /*color: green;*/
+    background-color: transparent;
+}
+
+QLabel#ctrlbk_z {
+    /*color: blue;*/
+    background-color: transparent;
+}
+
+QLabel#showlog {
+     background-color: transparent;
+}
+
+QRadioButton:disabled {
+    color: gray;
+}
+
+QRadioButton{
+    spacing: 2px;
+    color: white;
+}
+QRadioButton::indicator {
+    width: 45px;
+    height: 30px;
+}
+
+
+*[menuKeyFrame="true"] {
+    background-color: rgb(30, 30, 32);
+}
+
+QwtThermo {
+    background-color: rgb(45, 45, 48);
+}
+
+QAbstractButton#qt_dockwidget_closebutton {
+    qproperty-toolTip: "Close";
+}
+
+QAbstractButton#qt_dockwidget_floatbutton {
+    qproperty-toolTip: "Float";
+}
+
+QtBrowserItem:disabled {
+	 color:  rgb(255, 255, 0);
+}
+
+QTreeWidgetItem:disabled {
+	 color: rgb(255, 255, 0);
+	 background-color: rgb(255, 255, 0);
+}
+
+WidgetItem:disabled {
+	color: rgb(255, 255, 0);
+}
+
+QProgressBar{
+        border: none;
+        text-align: center;
+        background:rgb(37, 37, 38);
+}
+QProgressBar::chunk {
+        background: rgb(0, 160, 230);
+}
+
+
+QPushButton#btnColor0
+{
+	background-color:#FF0000;
+}
+QPushButton#btnColor1
+{
+	background-color:#00FF00;
+}
+QPushButton#btnColor2
+{
+	background-color:#0000FF;
+}
+QPushButton#btnColor3
+{
+	background-color:#FFFF00;
+}
+
+
+QPushButton#btnColor4
+{
+	background-color:#FF00FF;
+}
+QPushButton#btnColor5
+{
+	background-color:#00FFFF;
+}
+QPushButton#btnColor6
+{
+	background-color:#333333;
+}
+QPushButton#btnColor7
+{
+	background-color:#666666;
+}
+
+QPushButton#btnColor8
+{
+	background-color:#006699;
+}
+QPushButton#btnColor9
+{
+	background-color:#CC3366;
+}
+QPushButton#btnColor10
+{
+	background-color:#660033;
+}
+QPushButton#btnColor11
+{
+	background-color:#CC3399;
+}
+
+QPushButton#btnColor12
+{
+	background-color:#FF9900;
+}
+QPushButton#btnColor13
+{
+	background-color:#FF0033;
+}
+QPushButton#btnColor14
+{
+	background-color:#CC0033;
+}
+QPushButton#btnColor15
+{
+	background-color:#CCCC00;
+}
+
+QPushButton#btnColor16
+{
+	background-color:#00CCCC;
+}
+QPushButton#btnColor17
+{
+	background-color:#006699;
+}
+QPushButton#btnColor18
+{
+	background-color:#99CCFF;
+}
+QPushButton#btnColor19
+{
+	background-color:#FFCCCC;
+}
