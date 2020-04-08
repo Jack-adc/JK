@@ -2,9 +2,10 @@
 #include <QtWidgets/QApplication>
 #include <QTranslator>
 #include <QFile>
+#include "qbasewidget.h"
+
 int main(int argc, char *argv[])
 {
-	QCoreApplication::setAttribute(Qt::AA_UseDesktopOpenGL);//必须添加本行，否则opengl生成的图像无法显示
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/picture/Resources/Magic.png"));
     QTranslator qttranslator1;
@@ -17,7 +18,14 @@ int main(int argc, char *argv[])
 //     a.setStyleSheet(file.readAll());
 //   file.close();
   
-    picture w;
-    w.show();
+    picture *w = new picture;
+    QMainFrame* mainFrame = NULL;
+    mainFrame = new QMainFrame(QObject::tr("Picture"), w);
+    mainFrame->showNormal();
+    mainFrame->setMaxsizeWindow();
+    int res = a.exec();
+    w->deleteLater();
+    delete mainFrame;
+    mainFrame = nullptr;
     return a.exec();
 }

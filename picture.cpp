@@ -2,7 +2,15 @@
 #include <QMenuBar>  
 #include <QTreeWidget>
 #include <QOpenGLWidget>
-#include "circlenode.h"
+#include <QDesktopServices>
+#include <QApplication>
+#include <QSettings>
+#include <QFile>
+#include "CCreateFileDlg.h"
+#include "CShowWidget.h"
+#define MINWIDTH 1200
+#define MINHIGHT  500
+#define LOGPATH "./log"
 
 picture::picture(QWidget *parent)
     : QMainWindow(parent)
@@ -12,9 +20,12 @@ picture::picture(QWidget *parent)
     this->createMenu();
     this->createToolBar();
     this->createDockWidgets();
+    createStatusBars();
     this->showMaximized(); // 打开时全屏
-	this->createConnectToolBar();
-}
+    QRect ScreencRect = QApplication::desktop()->availableGeometry();
+    this->setGeometry(0, 0, ScreencRect.width(), ScreencRect.height());
+    this->setMinimumSize(QSize(1000, 600));
+ }
 
 void picture::createMenu()
 {
@@ -30,6 +41,8 @@ void picture::createMenu()
     m_pFileMenu->addAction(m_pOpenFile);
     m_pFileMenu->addAction(m_pSaveFile);
     m_pFileMenu->addAction(m_pSaveOther);
+
+    m_pViewMenu->addAction(m_pRetView);
 
 }
 
@@ -69,6 +82,20 @@ void picture::createAction()
     m_pCreateRectangle->setIcon(QIcon(":/picture/Resources/Rectangle.png"));
     m_pCreateTriangle = new QAction(tr("Create Triangle"), this);
     m_pCreateTriangle->setIcon(QIcon(":/picture/Resources/triangle.png"));
+
+    m_pRetView = new QAction(tr("ReSetView"), this);
+    connect(m_pNewFile, SIGNAL(triggered()), this, SLOT(onNewFile()));
+    connect(m_pOpenFile, SIGNAL(triggered()), this, SLOT(onOpenFile()));
+    connect(m_pSaveFile, SIGNAL(triggered()), this, SLOT(onSaveFile()));
+    connect(m_pSaveOther, SIGNAL(triggered()), this, SLOT(onSaveOther()));
+
+    connect(m_pRetView, SIGNAL(triggered()), this, SLOT(onReSetView()));
+    connect(m_pCreateCircle, SIGNAL(triggered()), this, SLOT(slotCreateCircle()));
+    connect(m_pCreateOval, SIGNAL(triggered()), this, SLOT(slotCreateCircle()));
+    connect(m_pCreateRectangle, SIGNAL(triggered()), this, SLOT(slotCreateRect()));
+    connect(m_pCreateTriangle, SIGNAL(triggered()), this, SLOT(slotCreateTri()));
+
+
 }
 
 void picture::createDockWidgets()
@@ -77,29 +104,189 @@ void picture::createDockWidgets()
     m_objTree->setContentsMargins(0, 0, 0, 0);
     m_objTree->setMaximumWidth(300);
     m_objTree->setFeatures(QDockWidget::AllDockWidgetFeatures);
-    m_objTree->setAllowedAreas(Qt::LeftDockWidgetArea);
+    m_objTree->setAllowedAreas(Qt::AllDockWidgetAreas);
     QTreeWidget* pTree = new QTreeWidget(m_objTree);
     m_objTree->setWidget(pTree);
-    m_objTree->setFocusPolicy(Qt::FocusPolicy::ClickFocus);
+    m_objTree->setFloating(false);
+   // m_objTree->setFocusPolicy(Qt::FocusPolicy::ClickFocus);
     addDockWidget(Qt::LeftDockWidgetArea, m_objTree);
-    m_previewWindow = new QDockWidget(tr("Preview Window"),this);
-    QOpenGLWidget* GL = new QOpenGLWidget(m_previewWindow);
-    m_previewWindow->setWidget(GL);
-    m_previewWindow->setContentsMargins(0, 0, 0, 0);
-    m_previewWindow->setAllowedAreas(Qt::RightDockWidgetArea);
-    addDockWidget(Qt::RightDockWidgetArea, m_previewWindow);
+    m_objTree->setObjectName("Object Tree");
+    m_previewWindow = new QTabWidget(this);
+   // QOpenGLWidget* GL = new QOpenGLWidget(m_previewWindow);
+   // m_previewWindow->setWidget(GL);
+  //  m_previewWindow->setContentsMargins(0, 0, 0, 0);
+  //  m_previewWindow->setAllowedAreas(Qt::RightDockWidgetArea);
+    m_previewWindow->setObjectName("Preview Window");
+  //  addDockWidget(Qt::RightDockWidgetArea, m_previewWindow);
+    setCentralWidget(m_previewWindow);
+    m_pViewMenu->addAction(m_objTree->toggleViewAction());          //设置停靠窗口是否显示
+    m_pRemain1DockWidget = new QDockWidget(tr("Remain1"),this);
+    m_pRemain1DockWidget->setFocusPolicy(Qt::FocusPolicy::TabFocus); // 接受Tab键焦点
+    m_pRemain2DockWidget = new QDockWidget(tr("Remain2"), this);
+    m_pRemain1DockWidget->setAllowedAreas(Qt::AllDockWidgetAreas);
+    m_pRemain2DockWidget->setAllowedAreas(Qt::AllDockWidgetAreas);
+    m_pRemain1DockWidget->setObjectName("Remain1");
+    m_pRemain2DockWidget->setObjectName("Remain2");
+    
+    addDockWidget(Qt::BottomDockWidgetArea, m_pRemain1DockWidget);
+    addDockWidget(Qt::BottomDockWidgetArea, m_pRemain2DockWidget);
+    tabifyDockWidget(m_pRemain1DockWidget, m_pRemain2DockWidget);
+    m_pRemain1DockWidget->raise();
+    m_pViewMenu->addAction(m_objTree->toggleViewAction());          //设置停靠窗口是否显示
+    m_pViewMenu->addAction(m_pRemain1DockWidget->toggleViewAction());
+    m_pViewMenu->addAction(m_pRemain2DockWidget->toggleViewAction());
+//     bool bExistObjTree, bExistRemain1Dock, bExistRemain2Dock;
+//     readDockFrame(bExistObjTree, bExistRemain1Dock, bExistRemain2Dock);
+//     m_objTree->setHidden(bExistObjTree);
+//     m_pRemain1DockWidget->setHidden(bExistRemain1Dock);
+//     m_pRemain2DockWidget->setHidden(bExistRemain2Dock);
+    QString strPath = "LastLayout.ini";
+    QFile file(strPath);
+    if (file.open(QIODevice::ReadOnly))
+    {
+        QByteArray ba;
+        QDataStream in(&file);
+        in >> ba;
+        file.close();
+        this->restoreState(ba);
+    }
 }
 
+void picture::createStatusBars()
+{
+    statusBar()->setMaximumHeight(20);
+    const QString strBgStyleGreen = "QLabel{ background-color: transparent; color:#409354; }";
+    QLabel *pWecLable = new QLabel(tr("welcome you") + "  " + "Jack", this);
+    QLabel *pPerLable = new QLabel(tr("Produced by Jack"), this);
+    pWecLable->setStyleSheet(strBgStyleGreen);
+    statusBar()->addWidget(pWecLable);
+    statusBar()->setSizeGripEnabled(true);                  //右下角显示调整大小的小三角
+    statusBar()->addPermanentWidget(pPerLable);             //右下角添加永久标签
+}
+
+void picture::saveDockFrame()
+{
+    QString strDock;
+    strDock += QString::number(m_objTree->isHidden());
+    strDock += ";";
+    strDock += QString::number(m_pRemain1DockWidget->isHidden());
+    strDock += ";";
+    strDock += QString::number(m_pRemain2DockWidget->isHidden());
+    strDock += ";";
+    QSettings cSettings("Picture", "Dock");
+    cSettings.setValue("DockList", strDock);
+}
+
+void picture::readDockFrame(bool& bExistObjTree, bool& bExistRemain1Dock, bool& bExistRemain2Dock)
+{
+    bool bRet[3] = { 1 };
+    QSettings cSettings("Picture", "Dock");
+    QString strFrame = cSettings.value("DockList").toString();
+    std::string strTem = strFrame.toStdString();
+    int nIndex = strTem.find(';');
+    int nPos = 0;
+    while (nIndex != std::string::npos)
+    {
+        std::string strData = strTem.substr(0, nIndex);
+        bRet[nPos++] = atoi(strData.c_str());
+        strTem = strTem.substr(nIndex + 1, strTem.length());
+        nIndex = strTem.find(';');
+    }
+    bRet[nPos++] = atoi(strTem.c_str());
+    bExistObjTree = bRet[0];
+    bExistRemain1Dock = bRet[1];
+    bExistRemain2Dock = bRet[2];
+}
 
 void picture::createConnectToolBar()
 {
-    connect(m_pCreateCircle, SIGNAL(triggered()), this, SLOT(slotCreateCircle()));
-}
 
+}
 
 void picture::slotCreateCircle()
 {
-	circleNode* node = new circleNode(m_previewWindow);
-	m_previewWindow->setWidget(node);
-	node->showMaximized();
+
+}
+
+void picture::slotCreateOval()
+{
+
+}
+
+void picture::slotCreateRect()
+{
+
+}
+
+void picture::slotCreateTri()
+{
+
+}
+
+void picture::onNewFile()
+{
+    CCreateFileDlg* dlg = new CCreateFileDlg(this);
+    if (dlg->exec() == QDialog::Accepted)
+        OnCreateFile(dlg->getParam());
+    dlg->deleteLater();
+
+}
+void picture::OnCreateFile(TNFileParam& tParam)
+{
+    CShowWidget* showWidget = new CShowWidget(tParam.strFileName, this);
+    m_previewWindow->addTab(showWidget, QString::fromStdString(tParam.strFileName));
+    m_previewWindow->setCurrentWidget(showWidget);
+}
+void picture::onDeleteFile()
+{
+
+}
+
+void picture::onSaveFile()
+{
+
+}
+
+void picture::onSaveOther()
+{
+
+}
+
+void picture::onOpenFile()
+{
+
+}
+
+void picture::slotCloseCheackSystem()
+{
+    QFile file("LastLayout.ini");
+    if (file.open(QIODevice::WriteOnly))
+    {
+        QDataStream out(&file);
+        out << this->saveState();
+        file.close();
+    }
+  //  saveDockFrame();
+    exit(-1);
+}
+
+void picture::onReSetView()
+{
+//     QFile file("MainLayout.ini");
+//     if (file.open(QIODevice::WriteOnly))
+//     {
+//         QDataStream out(&file);
+//         out << this->saveState();
+//         file.close();
+//     }  
+    QString strPath = "MainLayout.ini";
+    QFile file(strPath);
+    if (file.open(QIODevice::ReadOnly))
+    {
+        QByteArray ba;
+        QDataStream in(&file);
+        in >> ba;
+        file.close();
+        this->restoreState(ba);
+    }
 }

@@ -4,8 +4,12 @@
 #include <QMenuBar>  
 #include <QToolBar>  
 #include <QDockWidget>  
-#include "circlenode.h"
-
+#include <QStatusBar>
+#include <QLabel>
+#include <QTabWidget>
+//#include <QtWidgets/QApplication>
+#include <QtWidgets/QDesktopWidget>
+#include "CCreateFileDlg.h"
 class picture : public QMainWindow
 {
     Q_OBJECT
@@ -13,15 +17,36 @@ class picture : public QMainWindow
 public:
     picture(QWidget *parent = Q_NULLPTR);
 
+public slots:
+    void slotCloseCheackSystem();
 private:
-    void createMenu();
-    void createToolBar();
+    void createMenu();                                  // 创建菜单栏
+    void createToolBar();                               // 创建工具栏
+    void createStatusBars();							// 创建状态栏;
     void createAction();
     void createDockWidgets();
     void createConnectToolBar();
 
 private slots:
+    void onNewFile();
+    void onOpenFile();
+    void onDeleteFile();
+    void onSaveFile();
+    void onSaveOther();
+
+    void onReSetView();
+private slots:
     void slotCreateCircle();
+    void slotCreateOval();
+    void slotCreateRect();
+    void slotCreateTri();
+
+
+private:
+    void saveDockFrame();
+    void readDockFrame(bool& bExistObjTree, bool& bExistRemain1Dock,bool& bExistRemain2Dock);
+
+    void OnCreateFile(TNFileParam& tParam);
 private:
     // 主菜单
     QMenu*       m_pFileMenu;
@@ -38,6 +63,9 @@ private:
     QAction*     m_pSaveFile;
     QAction*     m_pSaveOther; // 另存为
 
+    // 视图菜单下拉
+    QAction*     m_pRetView;
+
 
     QAction*     m_pCreateCircle;
     QAction*     m_pCreateRectangle;
@@ -52,7 +80,10 @@ private:
     QDockWidget*  m_objTree;// 对象树停靠窗口
 
     // 显示窗口
-    QDockWidget*     m_previewWindow;
+    QTabWidget*     m_previewWindow;
+    QDockWidget*   m_pRemain1DockWidget;
+    QDockWidget*   m_pRemain2DockWidget;
+    QTabWidget*    m_pRemain1TabWidget;
+    QTabWidget*    m_pRemain2TabWidget;
 
-	//circleNode*      
 };
